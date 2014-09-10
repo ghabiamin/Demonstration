@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/background_header" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:id="@id/btnbackAbout" android:background="@drawable/ic_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/text_header" android:gravity="center_horizontal" android:id="@id/lblHeaderTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/matchInfo" android:layout_alignBaseline="@id/btnbackAbout" android:layout_alignBottom="@id/btnbackAbout" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/btnRefresh" android:background="@drawable/ic_refresh" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/background" style="@style/Layout.FillWidthHeight">
+        <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/white_text" android:gravity="center_horizontal" android:id="@id/lblTitleAlarm" android:layout_marginTop="5.0dip" android:text="@string/Web_view_title" style="@style/Layout.FillWidth" />
+            <RelativeLayout style="@style/Layout.FillWidth">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/imgAlarm" android:background="@drawable/ic_alarm" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/white_text" android:layout_gravity="bottom" android:id="@id/lblDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="FRI " />
+                </LinearLayout>
+                <TextView android:textColor="@color/white_text" android:layout_gravity="bottom" android:id="@id/lbltimeMatch" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:text="03:00" android:layout_weight="0.0" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_frame" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutStadium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="17.0dip">
+                    <ImageView android:id="@id/imgStadium" android:layout_width="fill_parent" android:layout_height="80.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/white_text" android:gravity="center_horizontal" android:id="@id/lblStadiumFull" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="Rio Deca tico" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/white_text" android:gravity="center_horizontal" android:id="@id/lblCapacity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="capacity 14,5689" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:paddingBottom="23.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layoutStadium" android:layout_alignParentLeft="true">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                        <TextView android:textColor="@color/white_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/match_number" />
+                        <TextView android:textColor="@color/white_text" android:gravity="center" android:id="@id/lblmatch" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:id="@id/imgcountry1Match" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_brazil" />
+                            <TextView android:textSize="15.0dip" android:textColor="@color/white_text" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/lblname1Match" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="BRAZIL" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="50.0dip" android:textColor="@color/white_text" android:id="@id/lblgoal1Match" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+                                <TextView android:textSize="50.0dip" android:textColor="@color/white_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+                                <TextView android:textSize="50.0dip" android:textColor="@color/white_text" android:id="@id/lblgoal2Match" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="10.0dip" android:textColor="@color/white_text" android:layout_gravity="center" android:id="@id/lblsvdMatch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SAOPAOLO" android:singleLine="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:id="@id/imgcountry2Match" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_croatia" />
+                            <TextView android:textSize="15.0dip" android:textColor="@color/white_text" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/lblname2Match" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="CROATIA" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layoutEvent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.sada.almondial.utility.NoScrollListView android:id="@id/lsvEvent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutGuide" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutGuide" android:padding="5.0dip" android:layout_marginTop="10.0dip" style="@style/Layout.FillWidth">
+                    <LinearLayout android:orientation="horizontal" style="@style/Layout.FillWidth">
+                        <LinearLayout android:layout_weight="1.0" style="@style/Layout.FillWidth">
+                            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_goal" />
+                            <TextView android:textColor="@color/white" android:paddingLeft="4.0dip" android:text="@string/goal" style="@style/Layout.FillWidth" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_weight="1.0" style="@style/Layout.FillWidth">
+                            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_red_card" />
+                            <TextView android:textColor="@color/white_text" android:paddingLeft="4.0dip" android:text="@string/red_card" style="@style/Layout.FillWidth" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_weight="1.0" style="@style/Layout.FillWidth">
+                            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_yellow_card" />
+                            <TextView android:textColor="@color/white_text" android:paddingLeft="4.0dip" android:text="@string/yellow_card" style="@style/Layout.FillWidth" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_marginTop="10.0dip" style="@style/Layout.FillWidth">
+                        <TextView android:textColor="@color/white_text" android:paddingLeft="4.0dip" android:text="@string/pennaly" style="@style/Layout.WrapWidthHeight" />
+                        <TextView android:textColor="@color/white_text" android:paddingLeft="4.0dip" android:layout_marginLeft="10.0dip" android:text="@string/owngoal" style="@style/Layout.WrapWidthHeight" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white_text" android:layout_gravity="center_horizontal" android:id="@id/txtReminder15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setRimender15min" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white_text" android:layout_gravity="center_horizontal" android:id="@id/txtReminder30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setRimender30min" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/white_text" android:layout_gravity="center_horizontal" android:id="@id/txtReminderOntime" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setRimenderOnTime" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/btnCancelAlarm" android:background="@drawable/btn_cancel" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
